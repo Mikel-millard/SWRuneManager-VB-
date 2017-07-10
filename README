@@ -1,0 +1,18 @@
+Mikel Millard
+Summoners War Rune Manager
+
+Details:
+
+This program allows the user to have a better visualization of thier runes in the mobile game called Summoners War. To run the the
+application, once the files are downloaded, run the .exe file found in the SWRuneManager folder. This will prompt you to select a 
+database (in .mdb format) and a .csv file with the rune information. There are two such example files located in the resources folder
+that can be used the program. The rest of the application should be straightforward on how to use, with the UI being intuitive.
+
+Languages Used:
+
+-Visual Basic
+-SQL
+
+Disclaimer: 
+
+Summoners War is a game owned and operated by Com2Us, I do not own any of the specific entities related to that game.
