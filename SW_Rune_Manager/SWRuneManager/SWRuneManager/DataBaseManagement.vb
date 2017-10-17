@@ -1,4 +1,13 @@
-﻿'Class to control all the database actions, sql commands and creating and closing the database connection
+﻿'Mikel Millard
+'CS 367 Term Project (SWRuneManager)
+'cs367001_04
+'Pledge: I pledge that I have neither given nor recieved help from anyone other than the
+'instructor and TA for all program components included here.
+
+
+
+
+'Class to control all the database actions, sql commands and creating and closing the database connection
 
 Imports System.Data.OleDb 'Imports the OleDb database
 
@@ -11,19 +20,20 @@ Public Class DataBaseManagement
 
     'Creates and opens a database connection
     Public Sub CreateDBConnection()
-        'Try catch block to ensure a valid database is selected
+        'Make sure the user selects a proper database file
         Try
-            con = New OleDbConnection("PROVIDER = Microsoft.Jet.OLEDB.4.0; Data Source = " + ImportForm.DatabaseFileTxt.Text)
+            con = New OleDbConnection("PROVIDER = Microsoft.Jet.OLEDB.4.0; Data Source = " + ImportForm.databasePath)
             con.Open()
         Catch ex As Exception
-            MsgBox("Please select a valid Database before continuing.", 0, "Database Error")
-        End Try 'End try catch block
-    End Sub 'CreateDBConnection sub end
+            MessageBox.Show("No proper database file was selected. Please select a .mdb file before continuing.", "Database Error")
+        End Try
+
+    End Sub
 
     'Closes the database connection
     Public Sub CloseDBConnection()
         con.Close()
-    End Sub 'CloseDBConnection sub end
+    End Sub
 
     'Sub routine to import the CSV file of runes to the database
     Public Sub CSVImport(ByVal file As String)
@@ -34,9 +44,9 @@ Public Class DataBaseManagement
                 ioReader.TextFieldType = FileIO.FieldType.Delimited
                 ioReader.SetDelimiters(",") 'sets the delimiter to , so it can find the correct fields in the file
                 While Not ioReader.EndOfData 'runs the loop unitl we arrive at the end of the file
-                    Dim fileCurrentRow As String() = ioReader.ReadFields() 'stores the current row in an array of strings
+                    Dim fileCurrentRow As String() = ioReader.ReadFields() 'stores the current row of the reader in an array of strings
 
-                    'Variables to go through the array and get the correct strings for the variable
+                    'Variables to go through the array and get the correct strings for the variable from the current row of the reader
                     Dim runeID, equipped, runeSet, slot, stars, level, price, primary, prefix, sub1, sub2, sub3, sub4, effeciency As String
                     runeID = fileCurrentRow(0)
                     equipped = fileCurrentRow(1)
@@ -72,7 +82,7 @@ Public Class DataBaseManagement
             RuneManagerV2.Show()
         Catch ex As Exception
             'Gives error message if the file wasn't a valid file to import
-            MsgBox("Please select a valid .CSV file before continuing.", 0, "Import Error")
+            MsgBox("Please select a valid file .CSV before continuing.", 0, "Import Error")
         End Try 'import csv try//catch end
 
     End Sub 'CSVImport() sub end

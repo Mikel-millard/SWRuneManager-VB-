@@ -170,6 +170,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\summonersWar.jpg" />
     <Content Include="RuneDatabase.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

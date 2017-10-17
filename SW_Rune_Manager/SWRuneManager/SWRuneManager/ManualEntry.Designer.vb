@@ -22,6 +22,7 @@ Partial Class ManualEntry
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ManualEntry))
         Me.FormNameLbl = New System.Windows.Forms.Label()
         Me.SetLbl = New System.Windows.Forms.Label()
         Me.StarsLbl = New System.Windows.Forms.Label()
@@ -162,7 +163,7 @@ Partial Class ManualEntry
         Me.SetCmbBx.FormattingEnabled = True
         Me.SetCmbBx.Items.AddRange(New Object() {"Accuracy", "Blade", "Despair", "Destroy", "Determination", "Endure", "Energy", "Enhance", "Fatal", "Fight", "Focus", "Guard", "Nemesis", "Rage", "Revenge", "Shield", "Swift", "Tolerance", "Vampire", "Violent", "Will"})
         Me.SetCmbBx.Location = New System.Drawing.Point(99, 105)
-        Me.SetCmbBx.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SetCmbBx.Margin = New System.Windows.Forms.Padding(2)
         Me.SetCmbBx.Name = "SetCmbBx"
         Me.SetCmbBx.Size = New System.Drawing.Size(132, 21)
         Me.SetCmbBx.TabIndex = 10
@@ -170,7 +171,7 @@ Partial Class ManualEntry
         'StarsNum
         '
         Me.StarsNum.Location = New System.Drawing.Point(99, 170)
-        Me.StarsNum.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.StarsNum.Margin = New System.Windows.Forms.Padding(2)
         Me.StarsNum.Name = "StarsNum"
         Me.StarsNum.Size = New System.Drawing.Size(130, 20)
         Me.StarsNum.TabIndex = 11
@@ -178,7 +179,7 @@ Partial Class ManualEntry
         'SlotNum
         '
         Me.SlotNum.Location = New System.Drawing.Point(99, 202)
-        Me.SlotNum.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SlotNum.Margin = New System.Windows.Forms.Padding(2)
         Me.SlotNum.Name = "SlotNum"
         Me.SlotNum.Size = New System.Drawing.Size(130, 20)
         Me.SlotNum.TabIndex = 12
@@ -189,7 +190,7 @@ Partial Class ManualEntry
         Me.MainStatCmbBx.FormattingEnabled = True
         Me.MainStatCmbBx.Items.AddRange(New Object() {"Atk", "Atk%", "Crit Rate%", "Crit Dam%", "Def", "Def%", "HP", "HP%", "Resistance%", "Speed"})
         Me.MainStatCmbBx.Location = New System.Drawing.Point(99, 234)
-        Me.MainStatCmbBx.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MainStatCmbBx.Margin = New System.Windows.Forms.Padding(2)
         Me.MainStatCmbBx.Name = "MainStatCmbBx"
         Me.MainStatCmbBx.Size = New System.Drawing.Size(131, 21)
         Me.MainStatCmbBx.TabIndex = 13
@@ -200,7 +201,7 @@ Partial Class ManualEntry
         Me.Sub1CmbBx.FormattingEnabled = True
         Me.Sub1CmbBx.Items.AddRange(New Object() {"Atk", "Atk%", "Crit Rate%", "Crit Dam%", "Def", "Def%", "HP", "HP%", "Resistance%", "Speed"})
         Me.Sub1CmbBx.Location = New System.Drawing.Point(99, 266)
-        Me.Sub1CmbBx.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Sub1CmbBx.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub1CmbBx.Name = "Sub1CmbBx"
         Me.Sub1CmbBx.Size = New System.Drawing.Size(131, 21)
         Me.Sub1CmbBx.TabIndex = 14
@@ -211,7 +212,7 @@ Partial Class ManualEntry
         Me.Sub2CmbBx.FormattingEnabled = True
         Me.Sub2CmbBx.Items.AddRange(New Object() {"Atk", "Atk%", "Crit Rate%", "Crit Dam%", "Def", "Def%", "HP", "HP%", "Resistance%", "Speed"})
         Me.Sub2CmbBx.Location = New System.Drawing.Point(99, 300)
-        Me.Sub2CmbBx.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Sub2CmbBx.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub2CmbBx.Name = "Sub2CmbBx"
         Me.Sub2CmbBx.Size = New System.Drawing.Size(131, 21)
         Me.Sub2CmbBx.TabIndex = 15
@@ -222,7 +223,7 @@ Partial Class ManualEntry
         Me.Sub3CmbBx.FormattingEnabled = True
         Me.Sub3CmbBx.Items.AddRange(New Object() {"Atk", "Atk%", "Crit Rate%", "Crit Dam%", "Def", "Def%", "HP", "HP%", "Resistance%", "Speed"})
         Me.Sub3CmbBx.Location = New System.Drawing.Point(99, 333)
-        Me.Sub3CmbBx.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Sub3CmbBx.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub3CmbBx.Name = "Sub3CmbBx"
         Me.Sub3CmbBx.Size = New System.Drawing.Size(131, 21)
         Me.Sub3CmbBx.TabIndex = 16
@@ -233,7 +234,7 @@ Partial Class ManualEntry
         Me.Sub4CmbBox.FormattingEnabled = True
         Me.Sub4CmbBox.Items.AddRange(New Object() {"Atk", "Atk%", "Crit Rate%", "Crit Dam%", "Def", "Def%", "HP", "HP%", "Resistance%", "Speed"})
         Me.Sub4CmbBox.Location = New System.Drawing.Point(99, 363)
-        Me.Sub4CmbBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Sub4CmbBox.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub4CmbBox.Name = "Sub4CmbBox"
         Me.Sub4CmbBox.Size = New System.Drawing.Size(132, 21)
         Me.Sub4CmbBox.TabIndex = 17
@@ -252,7 +253,7 @@ Partial Class ManualEntry
         'LevelNum
         '
         Me.LevelNum.Location = New System.Drawing.Point(99, 138)
-        Me.LevelNum.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LevelNum.Margin = New System.Windows.Forms.Padding(2)
         Me.LevelNum.Name = "LevelNum"
         Me.LevelNum.Size = New System.Drawing.Size(130, 20)
         Me.LevelNum.TabIndex = 19
@@ -304,7 +305,7 @@ Partial Class ManualEntry
         'Sub1ValTxt
         '
         Me.Sub1ValTxt.Location = New System.Drawing.Point(328, 268)
-        Me.Sub1ValTxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Sub1ValTxt.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub1ValTxt.Name = "Sub1ValTxt"
         Me.Sub1ValTxt.Size = New System.Drawing.Size(132, 20)
         Me.Sub1ValTxt.TabIndex = 24
@@ -312,7 +313,7 @@ Partial Class ManualEntry
         'Sub4ValTxt
         '
         Me.Sub4ValTxt.Location = New System.Drawing.Point(328, 365)
-        Me.Sub4ValTxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Sub4ValTxt.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub4ValTxt.Name = "Sub4ValTxt"
         Me.Sub4ValTxt.Size = New System.Drawing.Size(132, 20)
         Me.Sub4ValTxt.TabIndex = 25
@@ -320,7 +321,7 @@ Partial Class ManualEntry
         'Sub3ValTxt
         '
         Me.Sub3ValTxt.Location = New System.Drawing.Point(328, 334)
-        Me.Sub3ValTxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Sub3ValTxt.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub3ValTxt.Name = "Sub3ValTxt"
         Me.Sub3ValTxt.Size = New System.Drawing.Size(132, 20)
         Me.Sub3ValTxt.TabIndex = 26
@@ -328,7 +329,7 @@ Partial Class ManualEntry
         'Sub2ValTxt
         '
         Me.Sub2ValTxt.Location = New System.Drawing.Point(328, 302)
-        Me.Sub2ValTxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Sub2ValTxt.Margin = New System.Windows.Forms.Padding(2)
         Me.Sub2ValTxt.Name = "Sub2ValTxt"
         Me.Sub2ValTxt.Size = New System.Drawing.Size(132, 20)
         Me.Sub2ValTxt.TabIndex = 27
@@ -337,7 +338,7 @@ Partial Class ManualEntry
         '
         Me.SaveBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SaveBtn.Location = New System.Drawing.Point(299, 417)
-        Me.SaveBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SaveBtn.Margin = New System.Windows.Forms.Padding(2)
         Me.SaveBtn.Name = "SaveBtn"
         Me.SaveBtn.Size = New System.Drawing.Size(173, 38)
         Me.SaveBtn.TabIndex = 28
@@ -348,7 +349,7 @@ Partial Class ManualEntry
         '
         Me.RuneMngBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RuneMngBtn.Location = New System.Drawing.Point(35, 417)
-        Me.RuneMngBtn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RuneMngBtn.Margin = New System.Windows.Forms.Padding(2)
         Me.RuneMngBtn.Name = "RuneMngBtn"
         Me.RuneMngBtn.Size = New System.Drawing.Size(173, 38)
         Me.RuneMngBtn.TabIndex = 29
@@ -401,7 +402,8 @@ Partial Class ManualEntry
         Me.Controls.Add(Me.StarsLbl)
         Me.Controls.Add(Me.SetLbl)
         Me.Controls.Add(Me.FormNameLbl)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "ManualEntry"
         Me.Text = "ManualEntry"
         CType(Me.StarsNum, System.ComponentModel.ISupportInitialize).EndInit()

@@ -1,8 +1,9 @@
-﻿'ImportForm for to allow user to import runes or go to manual entry form
+﻿'ImportForm for the 
 
 Public Class ImportForm
     'Instantiates a new database of DataBaseManagement type to have access to that class' methods
     Dim database As New DataBaseManagement
+    Public databasePath As String
 
     'Moves the user to the the Manual Iport form after deleting the contents of the database
     Private Sub ManImpBtn_Click(sender As Object, e As EventArgs) Handles ManImpBtn.Click
@@ -29,6 +30,7 @@ Public Class ImportForm
     Private Sub BrowseBtn_Click(sender As Object, e As EventArgs) Handles BrowseBtn.Click
         'Opens a dialog for the user to find the correct file and opens it
         Dim dialog As New OpenFileDialog()
+        dialog.InitialDirectory = "E:\" 'Gives an initial directory to start, CSV is in the resources folder
         If DialogResult.OK = dialog.ShowDialog Then
             CSVFileTxt.Text = dialog.FileName
         End If 'End dialog result menu
@@ -52,12 +54,13 @@ Public Class ImportForm
         Me.CenterToScreen()
     End Sub 'ImportForm Load event end
 
-    'Allows the user to browse for a database to use
-    Private Sub BrowseDbBtn_Click(sender As Object, e As EventArgs) Handles BrowseDbBtn.Click
+    Private Sub DBBrowseBtn_Click(sender As Object, e As EventArgs) Handles DBBrowseBtn.Click
+        'Opens a dialog for the user to find the correct file and opens it
         Dim dialog As New OpenFileDialog()
+        dialog.InitialDirectory = "E:\" 'Gives an initial directory to start, CSV is in the resources folder
         If DialogResult.OK = dialog.ShowDialog Then
-            DatabaseFileTxt.Text = dialog.FileName
-        End If 'End dialog reslult menu
-    End Sub 'BrowseDbBtn Click event end
-
+            DBTxt.Text = dialog.FileName
+        End If 'End dialog result menu
+        databasePath = DBTxt.Text 'gives the database path
+    End Sub
 End Class 'ImportForm Class end

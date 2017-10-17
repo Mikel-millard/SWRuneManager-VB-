@@ -22,6 +22,7 @@ Partial Class RuneManagerV2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RuneManagerV2))
         Me.RuneLbl = New System.Windows.Forms.Label()
         Me.RunesCmbBx = New System.Windows.Forms.ComboBox()
         Me.ViewBtn = New System.Windows.Forms.Button()
@@ -65,6 +66,7 @@ Partial Class RuneManagerV2
         Me.Controls.Add(Me.ViewBtn)
         Me.Controls.Add(Me.RunesCmbBx)
         Me.Controls.Add(Me.RuneLbl)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "RuneManagerV2"
         Me.Text = "RuneManagerV2"
         Me.ResumeLayout(False)

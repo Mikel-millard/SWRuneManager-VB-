@@ -41,18 +41,33 @@ F:\CS 367\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\RuneDatabase.mdb
 F:\CS 367\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.exe
 F:\CS 367\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.pdb
 F:\CS 367\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.xml
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.exe.config
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.exe
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.xml
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.pdb
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\RuneDatabase.mdb
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.exe
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.pdb
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.xml
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.vbprojResolveAssemblyReference.cache
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.ImportForm.resources
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.ManualEntry.resources
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.Resources.resources
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.RuneDisplay.resources
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.RuneManagerV2.resources
-C:\Users\Mikel Millard\Documents\GitHub\SWRuneManager-VB-\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.vbproj.GenerateResource.Cache
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.exe.config
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.exe
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.xml
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.pdb
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\RuneDatabase.mdb
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.exe
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.pdb
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.xml
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.vbprojResolveAssemblyReference.cache
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.ImportForm.resources
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.ManualEntry.resources
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.Resources.resources
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.RuneDisplay.resources
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.RuneManagerV2.resources
+U:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.vbproj.GenerateResource.Cache
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.exe.config
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.exe
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.xml
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.pdb
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\RuneDatabase.mdb
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.exe
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.pdb
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\bin\Debug\SWRuneManager.xml
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.vbprojResolveAssemblyReference.cache
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.ImportForm.resources
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.ManualEntry.resources
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.Resources.resources
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.RuneDisplay.resources
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.RuneManagerV2.resources
+E:\SW_Rune_Manager\SWRuneManager\SWRuneManager\obj\Debug\SWRuneManager.vbproj.GenerateResource.Cache
