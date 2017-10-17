@@ -1,4 +1,4 @@
-﻿'ImportForm for the 
+﻿'ImportForm for to allow user to import runes or go to manual entry form
 
 Public Class ImportForm
     'Instantiates a new database of DataBaseManagement type to have access to that class' methods
@@ -51,5 +51,13 @@ Public Class ImportForm
         Me.Text = "Import CSV File"
         Me.CenterToScreen()
     End Sub 'ImportForm Load event end
+
+    'Allows the user to browse for a database to use
+    Private Sub BrowseDbBtn_Click(sender As Object, e As EventArgs) Handles BrowseDbBtn.Click
+        Dim dialog As New OpenFileDialog()
+        If DialogResult.OK = dialog.ShowDialog Then
+            DatabaseFileTxt.Text = dialog.FileName
+        End If 'End dialog reslult menu
+    End Sub 'BrowseDbBtn Click event end
 
 End Class 'ImportForm Class end

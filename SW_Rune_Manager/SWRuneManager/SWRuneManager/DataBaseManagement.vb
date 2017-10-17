@@ -11,14 +11,19 @@ Public Class DataBaseManagement
 
     'Creates and opens a database connection
     Public Sub CreateDBConnection()
-        con = New OleDbConnection("PROVIDER = Microsoft.Jet.OLEDB.4.0; Data Source = E:\CS 367\SW_Rune_Manager\SWRuneManager\RuneDatabase.mdb")
-        con.Open()
-    End Sub
+        'Try catch block to ensure a valid database is selected
+        Try
+            con = New OleDbConnection("PROVIDER = Microsoft.Jet.OLEDB.4.0; Data Source = " + ImportForm.DatabaseFileTxt.Text)
+            con.Open()
+        Catch ex As Exception
+            MsgBox("Please select a valid Database before continuing.", 0, "Database Error")
+        End Try 'End try catch block
+    End Sub 'CreateDBConnection sub end
 
     'Closes the database connection
     Public Sub CloseDBConnection()
         con.Close()
-    End Sub
+    End Sub 'CloseDBConnection sub end
 
     'Sub routine to import the CSV file of runes to the database
     Public Sub CSVImport(ByVal file As String)
@@ -67,7 +72,7 @@ Public Class DataBaseManagement
             RuneManagerV2.Show()
         Catch ex As Exception
             'Gives error message if the file wasn't a valid file to import
-            MsgBox("Please select a valid file .CSV before continuing.", 0, "Import Error")
+            MsgBox("Please select a valid .CSV file before continuing.", 0, "Import Error")
         End Try 'import csv try//catch end
 
     End Sub 'CSVImport() sub end

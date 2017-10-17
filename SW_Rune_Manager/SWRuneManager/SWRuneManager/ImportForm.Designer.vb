@@ -29,6 +29,9 @@ Partial Class ImportForm
         Me.ManImpBtn = New System.Windows.Forms.Button()
         Me.BrowseBtn = New System.Windows.Forms.Button()
         Me.RuneManagementBtn = New System.Windows.Forms.Button()
+        Me.DatabaseFileTxt = New System.Windows.Forms.TextBox()
+        Me.BrowseDbBtn = New System.Windows.Forms.Button()
+        Me.DatabaseLbl = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'FormNameLbl
@@ -45,7 +48,7 @@ Partial Class ImportForm
         '
         Me.CSVFileLbl.AutoSize = True
         Me.CSVFileLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CSVFileLbl.Location = New System.Drawing.Point(45, 104)
+        Me.CSVFileLbl.Location = New System.Drawing.Point(42, 128)
         Me.CSVFileLbl.Name = "CSVFileLbl"
         Me.CSVFileLbl.Size = New System.Drawing.Size(59, 13)
         Me.CSVFileLbl.TabIndex = 1
@@ -53,7 +56,7 @@ Partial Class ImportForm
         '
         'CSVFileTxt
         '
-        Me.CSVFileTxt.Location = New System.Drawing.Point(118, 101)
+        Me.CSVFileTxt.Location = New System.Drawing.Point(118, 125)
         Me.CSVFileTxt.Name = "CSVFileTxt"
         Me.CSVFileTxt.Size = New System.Drawing.Size(308, 20)
         Me.CSVFileTxt.TabIndex = 2
@@ -61,7 +64,7 @@ Partial Class ImportForm
         'ImpFileBtn
         '
         Me.ImpFileBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ImpFileBtn.Location = New System.Drawing.Point(219, 135)
+        Me.ImpFileBtn.Location = New System.Drawing.Point(219, 156)
         Me.ImpFileBtn.Name = "ImpFileBtn"
         Me.ImpFileBtn.Size = New System.Drawing.Size(108, 23)
         Me.ImpFileBtn.TabIndex = 3
@@ -81,7 +84,7 @@ Partial Class ImportForm
         'BrowseBtn
         '
         Me.BrowseBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BrowseBtn.Location = New System.Drawing.Point(444, 98)
+        Me.BrowseBtn.Location = New System.Drawing.Point(448, 122)
         Me.BrowseBtn.Name = "BrowseBtn"
         Me.BrowseBtn.Size = New System.Drawing.Size(75, 23)
         Me.BrowseBtn.TabIndex = 5
@@ -98,11 +101,41 @@ Partial Class ImportForm
         Me.RuneManagementBtn.Text = "Rune Management"
         Me.RuneManagementBtn.UseVisualStyleBackColor = True
         '
+        'DatabaseFileTxt
+        '
+        Me.DatabaseFileTxt.Location = New System.Drawing.Point(118, 79)
+        Me.DatabaseFileTxt.Name = "DatabaseFileTxt"
+        Me.DatabaseFileTxt.Size = New System.Drawing.Size(308, 20)
+        Me.DatabaseFileTxt.TabIndex = 7
+        '
+        'BrowseDbBtn
+        '
+        Me.BrowseDbBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BrowseDbBtn.Location = New System.Drawing.Point(448, 76)
+        Me.BrowseDbBtn.Name = "BrowseDbBtn"
+        Me.BrowseDbBtn.Size = New System.Drawing.Size(75, 23)
+        Me.BrowseDbBtn.TabIndex = 8
+        Me.BrowseDbBtn.Text = "Browse"
+        Me.BrowseDbBtn.UseVisualStyleBackColor = True
+        '
+        'DatabaseLbl
+        '
+        Me.DatabaseLbl.AutoSize = True
+        Me.DatabaseLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DatabaseLbl.Location = New System.Drawing.Point(42, 81)
+        Me.DatabaseLbl.Name = "DatabaseLbl"
+        Me.DatabaseLbl.Size = New System.Drawing.Size(65, 13)
+        Me.DatabaseLbl.TabIndex = 9
+        Me.DatabaseLbl.Text = "Database:"
+        '
         'ImportForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(595, 300)
+        Me.Controls.Add(Me.DatabaseLbl)
+        Me.Controls.Add(Me.BrowseDbBtn)
+        Me.Controls.Add(Me.DatabaseFileTxt)
         Me.Controls.Add(Me.RuneManagementBtn)
         Me.Controls.Add(Me.BrowseBtn)
         Me.Controls.Add(Me.ManImpBtn)
@@ -124,4 +157,7 @@ Partial Class ImportForm
     Friend WithEvents ManImpBtn As Button
     Friend WithEvents BrowseBtn As Button
     Friend WithEvents RuneManagementBtn As Button
+    Friend WithEvents DatabaseFileTxt As TextBox
+    Friend WithEvents BrowseDbBtn As Button
+    Friend WithEvents DatabaseLbl As Label
 End Class
